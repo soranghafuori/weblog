@@ -22,7 +22,6 @@ function AddPost() {
   const [auther, setAuther] = useState("");
   const [category, setCategory] = useState("");
   const [subtitle, setSubtitle] = useState("");
-  const [resData, setResData] = useState();
   const [alert, setAlert] = useState(false);
   const [alertData, setAlertData] = useState<AlertData>({ message: "Please Enter All Information", status: 'error' });
 
@@ -46,8 +45,7 @@ function AddPost() {
       subtitle,
       content,
     };
-    axios.post("/api/posts", newPost).then((res) => {
-      setResData(res.data);
+    axios.post("/api/posts", newPost).then(() => {
       setAlertData({ message: "Update Data is Success", status: 'success' });
       setAlert(true);
       setTitle("");

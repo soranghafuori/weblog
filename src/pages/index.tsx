@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import MainLayout from "@/layouts/MainLayout";
-import styles from "@/../styles/mainPage.module.css";
 import BlogPost from "@/components/BlogPost";
 import axios from "axios";
 import Pagination from "@mui/material/Pagination";
@@ -22,6 +21,7 @@ interface Blog {
   subtitle: string;
   category: string;
   content: string;
+  date:string
 }
 
 function Home() {

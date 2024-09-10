@@ -82,7 +82,7 @@ function Post() {
 ///// get seenBlogs on localstotrage . and add id on seenBlogs 
     const seenBlogs = localStorage.getItem("seenBlogs");
     if (seenBlogs && id) {
-      let seenblogsJson = JSON.parse(seenBlogs);
+      const seenblogsJson = JSON.parse(seenBlogs);
       if (!seenblogsJson.includes(id)) {
         seenblogsJson.push(id);
       }
@@ -104,7 +104,7 @@ function Post() {
 
 ///// delete post and show alert for success and return to home page
   function DeletePost() {
-    axios.delete(`/api/posts?id=${id}`).then((res) => {
+    axios.delete(`/api/posts?id=${id}`).then(() => {
     setAlertData({message:'Delete Post is Success',status:'success'})
     setAlert(true)
       window.location.href = "/";
@@ -251,11 +251,12 @@ function Post() {
             <hr />
             <div className={styles.content}>
               <ReactMarkdown
-                children={JSON.parse(blogdata.content)}
                 skipHtml={false}
                 remarkPlugins={[remarkBreaks]}
                 rehypePlugins={[rehypeRaw, rehypeHighlight]}
-              />
+              >
+                {JSON.parse(blogdata.content)}
+                </ReactMarkdown>
             </div>
             {/* button next and prev post */}
             <div className={styles.pagination}>

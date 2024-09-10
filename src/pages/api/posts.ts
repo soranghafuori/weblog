@@ -20,7 +20,7 @@ export default async function handler(
       }
 
       ///// create post and return success message
-      const newpost = await prisma.post.create({
+      await prisma.post.create({
         data: {
           title,
           auther,
@@ -83,7 +83,7 @@ export default async function handler(
       }
 
       ///// delete post and return success message
-      const post = await prisma.post.delete({
+      await prisma.post.delete({
         where: { id: Number(id) },
       });
       return res

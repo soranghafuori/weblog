@@ -1,0 +1,120 @@
+.main{
+    width: 100vw;
+    position: relative;
+    color: var(--black-color);
+}
+
+.post{
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+    position: relative;
+}
+
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.infoButton{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.infoButton button{
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--blackOpacity1-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--white-color);
+    cursor: pointer;
+}
+.post hr{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.content{
+    width: 80%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.pagination a{
+    position: absolute;
+    text-decoration: none;
+    color: var(--black-color);
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    bottom: 20px;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--blackOpacity1-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--white-color);
+}
+.buttonFirstBlog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--black-color);
+    padding: 10px;
+    background-color: var(--white-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--blackOpacity1-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--white-color);
+
+}
+
+.editpost{
+    width: 80vw;
+    left: 10vw;
+    position: absolute;
+    top: 4rem;
+    background-color: var(--gray3-color);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px var(--blackOpacity1-color);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid var(--white-color);
+    z-index: 10;
+}
+.active{
+    display: none;
+}
+.alert{
+    position: absolute;
+    top: 3rem;
+}
+@media(max-width:850px){
+    .post{
+        width: 95%;
+    }
+    .info{
+        flex-direction: column;
+        align-items: start;
+    }
+    .info h1{
+        font-size: 25px;
+    }
+    .info h5{
+        margin: 3px;
+        
+    }
+    .editpost{
+        width: 100vw;
+        left: 0;
+    }
+}

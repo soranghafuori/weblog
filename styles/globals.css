@@ -1,0 +1,31 @@
+:root{
+  /* --milk-color:#1d1c1c;
+  --white-color:rgb(0, 0, 0);
+  --black-color:rgb(255, 255, 255);
+  --blackOpacity1-color:rgba(255, 255, 255, 0.1);
+  --blackOpacity3-color:rgba(255, 255, 255, 0.35);
+  --gray-color:rgba(255, 255, 255, 0.651);
+  --gray2-color:rgba(0, 0, 0, 0.19);
+  --gray3-color:rgba(0, 0, 0, 0.342); */
+  --milk-color:#F1F1F1;
+  --white-color:rgba(255, 255, 255);
+  --black-color:rgb(0, 0, 0);
+  --blackOpacity1-color:rgba(0, 0, 0, 0.1);
+  --blackOpacity3-color:rgba(0, 0, 0, 0.35);
+  --gray-color:rgba(0, 0, 0, 0.651);
+  --gray2-color:rgba(255, 255, 255, 0.19);
+  --gray3-color:rgba(255, 255, 255, 0.342);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+  text-decoration: none;
+  color: black;
+}

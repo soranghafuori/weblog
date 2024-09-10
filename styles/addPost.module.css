@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top:2rem ;
+}
+.title{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.title input{
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--blackOpacity3-color) 0px 5px 15px;
+}
+.subtitle{
+    border: none;
+    outline: none;
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--blackOpacity3-color) 0px 5px 15px;
+    margin: 40px 0;
+}
+.markdown{
+    width: 75%;
+    box-shadow: var(--blackOpacity3-color) 0px 5px 15px;
+}
+.button{
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: var(--blackOpacity3-color) 0px 5px 15px;
+    margin: 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.subtitleBox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.subtitleBox p{
+    position: absolute;
+    bottom: 10px;
+    font-size: 10px;
+    color: red;
+    display: block;
+}
+.alert{
+    position: absolute;
+    top: 3rem;
+}
+@media (max-width:700px) {
+    .title{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .title input{
+        width: 25%;
+    }
+    .subtitle{
+        width: 90%;
+    }
+    .markdown{
+        width: 95%;
+    }
+    .button{
+        width: 50%;
+    }
+}
